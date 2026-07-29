@@ -1,13 +1,10 @@
-import { useState } from "react";
 import "./Sider.css";
 
-function Sider(){
-
-    const [ShowSider, setShowSider] = useState(true);
+function Sider({showSider, setShowSider}){
 
     return(
         //side nav bar
-        <div className = {ShowSider ? "side_nav" : "side_nav closed"}>
+        <div className = {showSider ? "side_nav" : "side_nav closed"}>
             <div className = "top-side">
                 <div className="main-img">
                     <img src={`${import.meta.env.BASE_URL}icons/list.png`} onClick={() => setShowSider(true)} alt="" />

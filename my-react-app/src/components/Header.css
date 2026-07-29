@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: #666;
+}
+
+.Header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 220px;
+    margin-right: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: margin-left 0.5s ease;
+}
+
+input {
+    border: 1px solid #666;
+    padding: 12px;
+    background-color: #666;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.right img {
+    width: 30px;
+    height: 30px;
+}
+
+.Header.expanded {
+    margin-left: 220px
+}
+
+.Header.collapsed {
+    margin-left: 90px;
+}
