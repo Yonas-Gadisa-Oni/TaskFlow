@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.Date {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.left h3{
+    font-size: 30px;
+}
+
+.left p{
+    color: #666;
+}
+
+.Date button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #4f4fe8;
+}
+
+.Date button img {
+    width: 16px;
+    height: 16px;
+}

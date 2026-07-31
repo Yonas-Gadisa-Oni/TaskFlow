@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #e6e6e6;
+}
+
+.layout {
+    height: 100vh;
+}
+
+/* Header */
+.Header {
+    position: fixed;
+    top: 10px;
+    left: 220px;
+    right: 20px;
+    height: 60px;
+    z-index: 1;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.Header.collapsed {
+    position: fixed;
+    left: 90px;
+}
+
+/* The area beside the sidebar*/ 
+.main {
+    margin-left: 220px;   /* space for sidebar */
+    margin-top: 80px;     /* space for header */
+    margin-right: 20px;
+    min-height: 100vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.main.collapsed {
+    margin-left: 100px;
+}
+
+/* Date component area */
+.Card {
+    position: relative;
+    top: 50px;
+}
