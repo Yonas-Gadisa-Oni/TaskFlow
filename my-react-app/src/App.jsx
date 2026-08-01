@@ -3,7 +3,8 @@ import { useState } from "react";
 import Sider from "./components/Sider";
 import Header from "./components/Header";
 import Date from "./components/Date";
-import Card from "./components/Card"
+import Card from "./components/Card";
+import Overall from "./components/Overall";
 
 import "./App.css";
 
@@ -25,6 +26,9 @@ function App() {
         </section>
         <section className="Card">
           <Card />
+        </section>
+        <section>
+          <Overall />
         </section>
       </main>
     </div>

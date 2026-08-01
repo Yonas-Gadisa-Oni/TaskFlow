@@ -1,0 +1,30 @@
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 25%;      /* 2 out of 8 tasks */
+    height: 100%;
+    background: #4caf50;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.Project-list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+    width: 600px;
+}
